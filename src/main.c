@@ -14,6 +14,7 @@ void play_game(void)
     while (sfRenderWindow_isOpen(game->window)) {
         render_everything(game);
         while (sfRenderWindow_pollEvent(game->window, &game->event)) {
+            analyse_events(game);
         }
     }
     destroy_everything(game);

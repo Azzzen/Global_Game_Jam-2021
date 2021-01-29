@@ -6,6 +6,7 @@
 ##
 SRC	=	src/main.c	\
 		src/init.c	\
+		src/events.c	\
 
 OBJ	=	$(SRC)
 
